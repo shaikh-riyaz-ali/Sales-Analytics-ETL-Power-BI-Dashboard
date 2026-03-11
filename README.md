@@ -155,37 +155,4 @@ Interactive features include:
 
 ---
 
-## Dashboard Preview
 
-### Sales Performance
-"C:\Users\riyaz\OneDrive\Pictures\Screenshots 1\sales_overview.png"
-
-### Customer Insights
-"C:\Users\riyaz\OneDrive\Pictures\Screenshots 1\customer_insight.png"
-
-### Product Performance
-"C:\Users\riyaz\OneDrive\Pictures\Screenshots 1\product performance.png"
-
----
-
-## How to Run the Pipeline
-
-Clone the repository
-
-```bash
-git clone https://github.com/shaikh-riyaz-ali/Sales-Analytics-ETL-Power-BI-Dashboard.git
-
-### Customer Insights
-![Customer Dashboard](dashboard_preview/customer_insights.png)
-
-### Product Performance
-![Product Dashboard](dashboard_preview/product_performance.png)
-
----
-
-## How to Run the Pipeline
-
-Clone the repository
-
-```bash
-git clone https://github.com/shaikh-riyaz-ali/Sales-Analytics-ETL-Power-BI-Dashboard.git
