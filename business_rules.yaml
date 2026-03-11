@@ -1,0 +1,106 @@
+orders:
+
+  column_mapping:
+    order_id: order_id
+    customer_id: customer_id
+    product_id: product_id
+    order_date: order_date
+    quantity: quantity
+    price: price
+    discount: discount
+    payment_method: payment_method
+
+  remove_negative_values:
+    - quantity
+    - price
+
+  remove_duplicates:
+    subset:
+      - order_id
+      - customer_id
+      - product_id
+
+  
+  datatype_conversion:
+    order_id: int
+    customer_id: int
+    product_id: int
+    order_date: datetime
+    quantity: int
+    price: float
+    discount: float
+    payment_method: string
+
+
+
+customers:
+
+  column_mapping:
+    customer_id: customer_id
+    customer_name: customer_name
+    email: email
+    city: city
+    state: state
+    signup_date: signup_date
+
+  remove_duplicates:
+    subset:
+      - customer_id
+
+  city_mapping:
+    Mumbai: Mumbai
+    Pune: Pune
+    Chennai: Chennai
+    Delhi: Delhi
+    Bangalore: Bangalore
+    Hyderabad: Hyderabad
+
+  state_mapping:
+    MH: Maharashtra
+    KA: Karnataka
+    DL: Delhi
+    TS: Telangana
+    TN: Tamil Nadu
+
+  fillna:
+    city: Unknown
+
+
+products:
+
+  column_mapping:
+    product_id: product_id
+    product_name: product_name
+    category: category
+    brand: brand
+    price: price
+    rating: rating
+
+  remove_duplicates:
+    subset:
+      - product_id
+      - product_name
+
+  category_mapping:
+    home: Home
+    Home: Home
+    fashion: Fashion
+    Fashion: Fashion
+    electronics: Electronics
+    Electronics: Electronics
+
+  brand_mapping:
+    Samsung: Samsung
+    Sony: Sony
+    Apple: Apple
+    Nike: Nike
+    Adidas: Adidas
+    Generic: Generic
+
+  datatype_conversion:
+    product_id: int
+    product_name: string
+    category: string
+    brand: string
+    price: float
+    rating: float

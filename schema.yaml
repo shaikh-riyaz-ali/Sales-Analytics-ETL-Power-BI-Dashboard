@@ -1,0 +1,28 @@
+orders:
+  columns:
+    order_id: int
+    customer_id: int
+    product_id: int
+    order_date: datetime
+    quantity: int
+    price: float
+    discount: float
+    payment_method: string
+
+customers:
+  columns:
+    customer_id: int
+    customer_name: string
+    email: string
+    city: string
+    state: string
+    signup_date: datetime
+
+products:
+  columns:
+    product_id: int
+    product_name: string
+    category: string
+    brand: string
+    price: float
+    rating: float
